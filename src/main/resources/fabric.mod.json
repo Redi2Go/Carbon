@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "carbon",
+  "version": "${version}",
+  "name": "Carbon",
+  "description": "An alternative raytraced render pipeline.",
+  "authors": [
+    "Redi2Go"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/Carbon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "at.redi2go.carbon.client.CarbonClient"
+    ],
+    "main": [
+      "at.redi2go.carbon.Carbon"
+    ]
+  },
+  "mixins": [
+    "Carbon.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
